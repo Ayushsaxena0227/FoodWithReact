@@ -1,0 +1,77 @@
+/* Navbar.module.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  color: #ff4c4c;
+  font-size: 1.8rem;
+  font-weight: 600;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 300px; /* Wider search bar */
+  padding: 0.6rem;
+  border: 2px solid #ff4c4c;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  box-shadow: 0 0 10px rgba(255, 76, 76, 0.8);
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+}
+
+.navItem {
+  margin-left: 1rem;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+}
+
+.navLink:hover {
+  background-color: #ff4c4c;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.activeLink {
+  background-color: #ff4c4c;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
